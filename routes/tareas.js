@@ -5,7 +5,7 @@ import {
 	crearTarea,
 	eliminarTarea,
 	obtenerTareas,
-} from '../controllers/TareaController'
+} from '../controllers/tareaController'
 import auth from '../middlewares/auth'
 import checkValidationResult from '../middlewares/checkValidationResult'
 
