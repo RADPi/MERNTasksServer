@@ -4,6 +4,7 @@ import userRoutes from './routes/usuarios'
 import authRoutes from './routes/auth'
 import proyectosRoutes from './routes/proyectos'
 import tareasRoutes from './routes/tareas'
+import crudReduxProductosRoutes from './crud-redux/routes/productos'
 import cors from 'cors'
 import morgan from 'morgan'
 
@@ -29,6 +30,7 @@ app.use('/api/usuarios', userRoutes)
 app.use('/api/auth', authRoutes)
 app.use('/api/proyectos', proyectosRoutes)
 app.use('/api/tareas', tareasRoutes)
+app.use('/api/crud-redux/productos', crudReduxProductosRoutes)
 
 // Arrancar el servidor
 app.listen(port, () => {

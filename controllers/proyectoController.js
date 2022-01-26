@@ -2,7 +2,7 @@ import Proyecto from '../models/Proyecto'
 
 export async function crearProyecto (req, res) {
 	try {
-		// Crear nuevo pryecto
+		// Crear nuevo proyecto
 		const proyecto = new Proyecto(req.body)
 
 		// Guardar el creado via JWT
